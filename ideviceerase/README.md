@@ -24,6 +24,11 @@ sudo scripts/install-deps-arch.sh
 
 # macOS
 sudo scripts/install-deps-macos.sh
+
+# WSL (Windows Subsystem for Linux - Debian/Ubuntu based)
+# Ensure your WSL environment is set up and can access USB devices.
+# Run this from within your WSL Debian/Ubuntu environment.
+bash scripts/install-deps-wsl.sh
 ```
 
 2. Build the utility:
@@ -65,7 +70,11 @@ ideviceerase -u 00008020-001A11561234002E
 1. **Install Dependencies**:
 ```bash
 # Select the appropriate script for your OS
+# For Debian/Ubuntu:
 sudo scripts/install-deps-debian.sh
+# For WSL (Debian/Ubuntu based):
+# Ensure you are running this command inside your WSL terminal
+bash scripts/install-deps-wsl.sh
 ```
 
 2. **Build the Utility**:
